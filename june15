@@ -1,0 +1,38 @@
+ export KUBECONFIG=/etc/kubernetes/admin.conf
+  746  kubectl get pod --all-namespaces
+  747  kubectl get nodes
+  748  kubectl get pod --all-namespaces
+  749  kubectl get nodes
+  750  kubectl get pod --all-namespaces| grep devops
+  751  kubectl get pod --all-namespaces| grep devops | wc -l
+  752  kubectl delete pod devopsclass-5bbff7545-wk4qs
+  753  kubectl get pod --all-namespaces| grep devops | wc -l
+  754  kubectl get pod --all-namespaces| grep devops 
+  755  kubectl get dc
+  756  kubectl get deployment
+  757  kubectl describe deployment devopsclass
+  758  kubectl get co
+  759  kubectl get clustercomponents
+  760  kubectl get resources
+  761  kubectl get componentstatus
+  762  kubectl get cs
+  763  kubectl get pod --all-namespaces| grep devops 
+  764  kubectl get pod --all-namespaces
+  765  kubectl get pod --all-namespaces | grep worker
+  766  kubectl get pod --all-namespaces | grep devops
+  767  kubectl get svc
+  768  kubectl describe svc/devopsclass
+  769  kubectl get describe pod devopsclass-5bbff7545-v9ctj
+  770  kubectl get des pod devopsclass-5bbff7545-v9ctj
+  771  kubectl des pod devopsclass-5bbff7545-v9ctj
+  772  kubectl describe pod devopsclass-5bbff7545-v9ctj
+  773  kubectl describe pod devopsclass-5bbff7545-v9ctj | grep -i label
+  774  kubectl describe svc/devopsclass| grep -i label
+  775  #kubectl edit deployment
+  776  kubectl describe svc/devopsclass
+  777  kubectl edit deployment devopsclass
+  778  kubectl get pods | grep -i devops
+  779  kubectl describe svc/devopsclass
+  780  kubectl get svc
+  781  kubectl get pods --all-namespaces
+  782  kubectl get pods --all-namespaces -o wide
