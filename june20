@@ -1,0 +1,17 @@
+ oc login -u yoovik -p 6a33c0d684694364a56f https://api.ap46.prod.nextcle.com:6443
+    7  oc new-project  yoovik-route
+    8  clear
+    9  oc new-app --as-deployment-config php:7.3  https://github.com/devopsstuff09/DO180-apps --context-dir php-helloworld --name php-hellowrld
+   10  oc logs -f buildconfig/php-hellowrld
+   11  oc get pods
+   12  oc get svc
+   13  oc get routes
+   14  oc expose svc/php-hellowrld
+   15  oc get routes
+   16  curl http://php-hellowrld-yoovik-route.apps.ap46.prod.nextcle.com
+   17  curl http://172.30.178.236
+   18  curl http://php-hellowrld123-yoovik-route.apps.ap46.prod.nextcle.com
+   19  curl http://php-hellowrld-yoovik-route.apps.ap46.prod.nextcle.com
+   20  #oc expose svc/php-hellowrld
+   21  oc get route
+   22  oc describe route php-hellowrld
